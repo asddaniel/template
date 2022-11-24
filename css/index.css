@@ -4,6 +4,13 @@
     list-style: none;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html, body{
+   scroll-behavior: smooth; 
+}
 .nav-bar{
   /* background-color: rgba(199, 195, 195, 0.8); */
   width: 100%;
@@ -46,6 +53,9 @@
     flex-direction: column;
     text-align: center;
     width: 100vw;
+}
+.custom-grise{
+    background-color: rgb(232, 235, 235);
 }
 .flex{
     display: flex;
@@ -130,7 +140,42 @@
 .card img{
     border-radius: 5vh;
     max-height: 10vh;
+   
 }
+.container-moitie{
+    width: 50vw;
+}
+.custom-card{
+width: 50%;
+
+margin: 1px;
+text-align:left;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.text-cadrer{
+    padding: 2vh;
+}
+.custom-card .title-moyenne, .text-cadrer{
+    max-width: 60%;
+}
+.custom-card .smart-button{
+    align-self: start;
+    margin-left: 20%;
+}
+.custom-card img{
+    width: 35vw;
+    
+    object-fit: cover;
+
+}
+.padding-left-10{
+    padding-left: 10vw;
+}
+
 .card img:hover{
     outline: 2px solid rgb(30, 52, 179);
 }
@@ -147,10 +192,21 @@
     font-weight: 600;
    
 }
+.main-menu li{
+    cursor: pointer;
+}
 .presenter-bar{
     width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.presenter-bar-1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    
+    justify-content:center;
 }
