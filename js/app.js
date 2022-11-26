@@ -20,10 +20,31 @@ const observer = new IntersectionObserver((entries)=>{
                 toggle_nav('on')
             }
         }
-        console.log(entry.isIntersecting)
+        //console.log(entry.isIntersecting)
         //document.querySelector('.nav-bar').classList.toggle('inactive')
     }
 })
 
 
 observer.observe(document.querySelector('.indicator'));
+
+const observer1 = new IntersectionObserver((entries)=>{
+    
+    for(const entry of entries){
+        
+            
+            if(entry.isIntersecting){
+                entry.target.classList.add('apparaitre');
+                // console.log(entry.target)
+            }
+        
+        console.log(entry.isIntersecting)
+        //document.querySelector('.nav-bar').classList.toggle('inactive')
+    }
+}, {
+    threshold: 0.3
+})
+observer1.observe(document.querySelector("#skills"))
+observer1.observe(document.querySelector("#promos"))
+observer1.observe(document.querySelector("#event"))
+observer1.observe(document.querySelector("#tarif"))
