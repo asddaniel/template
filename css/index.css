@@ -12,7 +12,9 @@ a{
     color: inherit;
 }
 html, body{
-   scroll-behavior: smooth; 
+   scroll-behavior:smooth; 
+   scroll-snap-stop: always;
+   scroll-snap-type: mandatory;
 }
 .nav-bar{
   /* background-color: rgba(199, 195, 195, 0.8); */
