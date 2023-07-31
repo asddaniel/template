@@ -1,0 +1,42 @@
+@media screen and (max-width:1200px) {
+
+.nav-bar{
+    flex-direction: column;
+    height: max-content;
+}
+.nav-bar .menu-presenter{
+    height: auto;
+    grid-template-columns: 1fr;
+
+}
+.container-card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.height-middle{
+    height: auto;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+    margin-top: 2vh;
+    height: auto;
+}
+.nav-bar .main-menu{
+   width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact-button{
+    display: flex;
+    flex-direction: column;
+}
+.cover-hero-section{
+    margin-top: 0vh;
+    height: 65vh;
+}
+}
